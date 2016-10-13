@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+
+class WelcomeController extends Controller
+{
+    // ControllerからのViewの呼び出し
+    public function index() 
+    {
+    	return view('welcome');
+    }
+
+    public function contact()
+    {
+    	return view('contact');
+    }
+
+    public function layout()
+    {
+		return view('layout');    	
+    }
+
+}
